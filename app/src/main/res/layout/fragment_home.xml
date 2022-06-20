@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragments.homeFragment.HomeFragment">
+
+    <TextView
+        android:id="@+id/news_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Новости"
+        android:layout_margin="20dp"
+        android:textSize="28sp"
+        style="@style/title"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/add_news"
+        />
+
+    <Button
+        android:id="@+id/add_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2B6CA6"
+        android:text="add"
+        android:background="@drawable/styles"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/news_tv"
+        app:layout_constraintTop_toTopOf="@+id/news_tv"
+        app:layout_constraintBottom_toBottomOf="@+id/news_tv"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_admin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:listitem="@layout/main_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_tv"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cvDialog"
+    android:background="@color/white"
+    android:visibility="gone"
+    android:backgroundTint="@color/white"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="50dp"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvWaitingVerify"
+            android:text="@string/waiting_verify_rus"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvWaitingTime"
+            android:layout_marginStart="70dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tvWaitingVerify"
+            android:text="@string/send_again_rus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvCountTime"
+            android:layout_below="@+id/tvWaitingVerify"
+            android:layout_toEndOf="@+id/tvWaitingTime"
+            android:layout_marginStart="4dp"
+            android:text="@string/_30"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSendAgainDis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvWaitingTime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/send_again_rus"
+            android:textSize="12sp"
+            app:backgroundTint="#5E5D5D"
+            app:cornerRadius="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSendAgain"
+            android:text="@string/send_again_rus"
+            android:textSize="12sp"
+            app:cornerRadius="20dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tvWaitingTime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvWaitingTime"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="нажмите для входа"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:cornerRadius="20dp" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

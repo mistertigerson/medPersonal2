@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/groupFragment">
+    <fragment
+        android:id="@+id/groupFragment"
+        android:name="com.test.medpersonal.presentation.fragments.groupFragment.GroupFragment"
+        android:label="fragment_group"
+        tools:layout="@layout/fragment_group" >
+        <action
+            android:id="@+id/action_groupFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.test.medpersonal.presentation.fragments.homeFragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.test.medpersonal.presentation.fragments.profileFragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <argument
+            android:name="company"
+            app:argType="string"
+
+            app:nullable="true" />
+        <argument
+            android:name="specific"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.test.medpersonal.presentation.fragments.authFragment.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.test.medpersonal.presentation.fragments.chatFragment.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <argument
+            android:name="to"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.test.medpersonal.presentation.fragments.registrationFragment.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.test.medpersonal.presentation.fragments.dataFragment.DataFragment"
+        android:label="fragment_data"
+        tools:layout="@layout/fragment_data" />
+    <fragment
+        android:id="@+id/newsDataFragment"
+        android:name="com.test.medpersonal.presentation.fragments.newsData.NewsDataFragment"
+        android:label="fragment_news_data"
+        tools:layout="@layout/fragment_news_data" />
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.test.medpersonal.presentation.fragments.adminPanel.AdminFragment"
+        android:label="fragment_admin"
+        tools:layout="@layout/fragment_admin" />
+</navigation>

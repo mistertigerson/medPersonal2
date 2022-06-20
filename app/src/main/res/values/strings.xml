@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">medPersonal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signIn">Войти</string>
+    <string name="mail">email</string>
+    <string name="tv_ewe_ne_zareg">еще не зарегестрированы?</string>
+    <string name="registration">регистрация</string>
+    <string name="forget_password">забыли пароль?</string>
+    <string name="recovery">восстановить</string>
+    <string name="or">или</string>
+    <string name="Password_rus">password</string>
+    <string name="web_client">79325716744-q7c1baldjmoqah3r21292jraamrp97r5.apps.googleusercontent.com</string>
+    <string name="resend">отправить еще раз</string>
+    <string name="registration_rus">регистрация</string>
+    <string name="cannot_registrated_rus">не удалось зарегестрироваться</string>
+    <string name="send_email_verification_rus">на вашу почту отправлено смс подтверждение</string>
+    <string name="cannot_send_email_verification_rus">не удалось отправить сообщение на почту</string>
+    <string name="waiting_verify_rus">ожидание на подтверждение</string>
+    <string name="send_again_rus">отправить еще раз</string>
+    <string name="_30">30</string>
+</resources>
